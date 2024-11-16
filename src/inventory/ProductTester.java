@@ -10,11 +10,40 @@ public class ProductTester {
            // Crear Scanner para la entrada del usuario
            Scanner in = new Scanner(System.in);
 
+           // Número de artículos
+           int maxSize=0;
+
            // Variables locales para almacenar los datos temporales para los atributos de los productos
            int tempNumber;
            String tempName;
            int tempQty;
            int tempPrice;
+           //int maxSize;
+
+           // Solicitar al usuario que introduzca el número de artículos que quiere ingresar
+
+           System.out.println("Ingresa la cantidad de productos que deseas agregar\n" +
+                   "Ingresa 0 (cero) si no deseas agregar productos:");
+           maxSize = in.nextInt();
+               // Pide nuevamente el número de artículos mientras el número de artículos sea menor a cero
+           /*do{
+               try {
+                   maxSize = in.nextInt();
+               }catch (Exception e){
+                   System.out.println("Error: Valor incorrecto introducido\n" +
+                               "Ingresa nuevamente la cantidad de producto");
+                   in.nextLine();  // Consumir la nueva línea pendiente
+               }
+           }while(maxSize <= 0);*/
+
+           do{
+               try{
+                   System.out.println("Ingresa la cantidad de productos que deseas agregar\n" +
+                           "Ingresa 0 (cero) si no deseas agregar productos:");
+                   maxSize = in.nextInt();
+               }catch(){};
+
+           } while(maxSize <= 0);
 
            // Solicitar al usuario que introduzca valores para los atributos de Product para crear Producto 1(p1)
            System.out.println("Ingrese el número de producto (id): ");
@@ -43,6 +72,7 @@ public class ProductTester {
 
            // Imprimir el objeto p1
            System.out.println(p1);
+           p1.getInventoryValue();
 
            // Llamar al setter del método del cálculo del inventario
            // p1.getInventoryValue();

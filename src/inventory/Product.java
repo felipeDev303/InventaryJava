@@ -19,6 +19,7 @@ public class Product {
         this.price = price;
     }
 
+    // Getter and Setter id
     public int getId() {
         return this.id;
     }
@@ -27,6 +28,7 @@ public class Product {
         this.id = id;
     }
 
+    // // Getter and Setter name
     public String getName() {
         return this.name;
     }
@@ -35,6 +37,7 @@ public class Product {
         this.name = name;
     }
 
+    // Getter and Setter Cantidad qty
     public int getQty() {
         return this.qty;
     }
@@ -43,6 +46,7 @@ public class Product {
         this.qty = qty;
     }
 
+    // // Getter and Setter price
     public int getPrice() {
         return this.price;
     }
@@ -51,6 +55,7 @@ public class Product {
         this.price = price;
     }
 
+    // Getter and Setter status
     public boolean isActive(){
         return this.active;
     }
