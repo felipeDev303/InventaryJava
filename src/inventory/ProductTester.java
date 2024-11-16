@@ -23,8 +23,6 @@ public class ProductTester {
            // Declarar el arreglo
            Product[]productos;
 
-           // Solicitar al usuario que introduzca el número de artículos que quiere ingresar
-
                // Pide nuevamente el número de artículos mientras el número de artículos sea menor a cero
            do{
                try{
@@ -73,40 +71,6 @@ public class ProductTester {
                };
            } while(maxSize < 0);
 
-
-
-           // Crear el objeto p1 usando el constructor que toma 4 parámetros
-          // Product p1 = new Product(tempNumber, tempName, tempQty, tempPrice);
-
-
-           // Llamar al setter para modificar el estado de activo
-           // p1.setActive(false); // esto cambiaría el estado de activo a falso
-
-           // Verificar el valor actualizado usando el getter
-           // System.out.println("Estado del producto: " + (p1.isActive() ? "Activo":"Descatalogado"));
-
-
-           // Imprimir el objeto p1
-         //  System.out.println(productos);
-         //  productos.getInventoryValue();
-
-           // Llamar al setter del método del cálculo del inventario
-           // p1.getInventoryValue();
-
-           // Cerrar el Scanner
            in.close();
-
-        /*Product product1 = new Product(1, "Cerveza Tamango", 10, 3600);
-        Product product2 = new Product(2, "Cerveza Jester", 20, 4500);
-        Product product3 = new Product(3, "Cerveza LOA", 30, 4500);
-        Product product4 = new Product(4, "Cerveza Delirium", 40, 4200);
-        Product product5 = new Product();
-        Product product6 = new Product();
-        System.out.println(product1);
-        System.out.println(product2);
-        System.out.println(product3);
-        System.out.println(product4);
-        System.out.println(product5);
-        System.out.println(product6);*/
     }
 }
